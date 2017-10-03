@@ -1,7 +1,7 @@
 Firefox Developer Edition package for Debian / Ubuntu
 =====================================================
 
-![FirefoxDeveloperEdition](https://raw.githubusercontent.com/VitexSoftware/FirefoxDeveloperEditionDeb/master/mozicon300.png "DeveloperEdition logo")
+![FirefoxDeveloperEdition](https://raw.githubusercontent.com/VitexSoftware/FirefoxDevelEditionDeb/master/mozicon300.png "DeveloperEdition logo")
 
 A version of Firefox that's tailored for web developers.
 
@@ -9,7 +9,7 @@ Building package
 ----------------
 
     apt-get -y install devscripts dpkg-dev
-    git clone https://github.com/VitexSoftware/FirefoxDeveloperEditionDeb.git
+    git clone https://github.com/VitexSoftware/FirefoxDevelEditionDeb.git
     debuild -i -us -uc -b
 
 
@@ -37,4 +37,4 @@ Testing
     startxfce4
 
 
-![Vagrant Test](https://raw.githubusercontent.com/VitexSoftware/FirefoxDeveloperEditionDeb/master/vagrantubuntu.png "DeveloperEdition in Ubuntu")
+![Vagrant Test](https://raw.githubusercontent.com/VitexSoftware/FirefoxDevelEditionDeb/master/vagrantubuntu.png "DeveloperEdition in Ubuntu")
