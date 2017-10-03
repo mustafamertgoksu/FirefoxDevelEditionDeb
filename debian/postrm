@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
 if [ "$1" = "remove" ]; then
-    dpkg-divert --package nightly --rename --remove /usr/bin/nightly
+    dpkg-divert --package firefox-devedition --rename --remove /usr/bin/firefox-devedition
 fi
-
-

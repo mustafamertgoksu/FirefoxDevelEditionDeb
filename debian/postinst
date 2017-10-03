@@ -2,17 +2,17 @@
 
 if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] ; then
     update-alternatives --install /usr/bin/x-www-browser \
-        x-www-browser /opt/nightly/firefox 70 \
+        x-www-browser /opt/firefox-devedition/firefox 70 \
         --slave /usr/share/man/man1/x-www-browser.1.gz \
         x-www-browser.1.gz /usr/share/man/man1/firefox-esr.1.gz
-    update-alternatives --remove mozilla /opt/nightly/firefox
+    update-alternatives --remove mozilla /opt/firefox-devedition/firefox
     update-alternatives --install /usr/bin/gnome-www-browser \
-        gnome-www-browser /opt/nightly/firefox 70 \
+        gnome-www-browser /opt/firefox-devedition/firefox 70 \
         --slave /usr/share/man/man1/gnome-www-browser.1.gz \
         gnome-www-browser.1.gz /usr/share/man/man1/firefox-esr.1.gz
 fi
 
 if [ "$1" = "configure" ] ; then
-    chmod g+rwX /opt/nightly -R
-    chgrp users /opt/nightly -R
+    chmod g+rwX /opt/firefox-devedition -R
+    chgrp users /opt/firefox-devedition -R
 fi

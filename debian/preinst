@@ -1,6 +1,6 @@
 #!/bin/sh -e
-DESTDIR="/opt/nightly"
-TMPFILE="/tmp/nightly.tar.bz2"
+DESTDIR="/opt/firefox-devedition"
+TMPFILE="/tmp/firefox-devedition.tar.bz2"
 LANGCODE=`echo $LANG | awk -F_ '{print $1}'`
 
 case $LANGCODE in
@@ -17,8 +17,7 @@ case "$archs" in
     armel) archs="linuxarmel" ;;
 esac
 
-
-wget "https://download.mozilla.org/?product=firefox-nightly-latest-l10n-ssl&os=${archs}&lang=${LANGCODE}" -O $TMPFILE
+wget "https://download.mozilla.org/?product=firefox-devedition-latest-l10n-ssl&os=${archs}&lang=${LANGCODE}" -O $TMPFILE
 cd /tmp
 mkdir -p $DESTDIR
 tar xjvf $TMPFILE -C $DESTDIR --strip-components=1
