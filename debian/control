@@ -13,7 +13,7 @@ Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-good
 Suggests: fonts-stix | otf-stix, fonts-lmodern, mozplugger, libgssapi-krb5-2 | libkrb53, libgnomeui-0, libcanberra0
 Conflicts: iceweasel (<< 45), j2re1.4, pango-graphite (<< 0.9.3)
 Breaks: xul-ext-torbutton
-Provides: gnome-www-browser, www-browser, x-www-browser, firefox
+Provides: gnome-www-browser, www-browser, x-www-browser
 Description: A version of Firefox that's tailored for web developers.
  Firefox Developer Edition replaces the Aurora channel in the Firefox Release 
  Process. Like Aurora, features will land in the Developer Edition every six 

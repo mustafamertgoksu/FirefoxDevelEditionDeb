@@ -17,7 +17,7 @@ case "$archs" in
     armel) archs="linuxarmel" ;;
 esac
 
-wget "https://download.mozilla.org/?product=firefox-devedition-latest-l10n-ssl&os=${archs}&lang=${LANGCODE}" -O $TMPFILE
+wget "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=${archs}&lang=${LANGCODE}" -O $TMPFILE
 cd /tmp
 mkdir -p $DESTDIR
 tar xjvf $TMPFILE -C $DESTDIR --strip-components=1
