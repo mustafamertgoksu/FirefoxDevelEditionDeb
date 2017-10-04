@@ -16,7 +16,7 @@ Building package
 Installation
 ------------
 
-Download from https://www.vitexsoftware.cz/pool/main/n/DeveloperEdition/firefox-devedition_1.0.0_all.deb or Build package. Then install:
+Download from https://www.vitexsoftware.cz/pool/main/f/firefox-devedition/firefox-devedition_1.0.0_all.deb or Build package. Then install:
 
     gdebi firefox-devedition_1.0.0_all.deb
 
