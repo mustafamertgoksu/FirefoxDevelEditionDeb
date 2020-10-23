@@ -8,9 +8,11 @@ A version of Firefox that's tailored for web developers.
 Building package
 ----------------
 
+```shell
     apt-get -y install devscripts dpkg-dev
     git clone https://github.com/VitexSoftware/FirefoxDevelEditionDeb.git
     debuild -i -us -uc -b
+```
 
 
 Installation
@@ -18,15 +20,20 @@ Installation
 
 Download from https://www.vitexsoftware.cz/pool/main/f/firefox-devedition/firefox-devedition_1.0.0_all.deb or Build package. Then install:
 
+```shell
     gdebi firefox-devedition_1.0.0_all.deb
+```
 
 
 Or you can use repo:
 
-    wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
-    echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/vitexsoftware.list
-    apt update
-    apt install firefox-devedition
+```shell
+sudo apt install lsb-release wget
+echo "deb http://repo.vitexsoftware.cz $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
+sudo wget -O /etc/apt/trusted.gpg.d/vitexsoftware.gpg http://repo.vitexsoftware.cz/keyring.gpg
+sudo apt update
+sudo apt install firefox-devedition
+```
 
 Testing
 -------
@@ -38,3 +45,6 @@ Testing
 
 
 ![Vagrant Test](https://raw.githubusercontent.com/VitexSoftware/FirefoxDevelEditionDeb/master/vagrantubuntu.png "DeveloperEdition in Ubuntu")
+
+
+See also: https://github.com/Vitexus/ThunderbirdDailyDeb https://github.com/Vitexus/FirefoxNightlyDeb
