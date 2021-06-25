@@ -1,5 +1,10 @@
-firefox-devedition (1.0.0) UNRELEASED; urgency=medium
+firefox-devedition (90.0b12+) UNRELEASED; urgency=medium
 
+  [ Vítězslav Dvořák ]
   * Fix Download url on english environments
 
- -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 14 Sep 2017 02:57:34 +0200
+  [ CyberVitexus ]
+  * repack
+  * Jenkinsfile added
+
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Fri, 25 Jun 2021 23:31:05 +0200
